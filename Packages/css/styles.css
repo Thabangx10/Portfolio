@@ -1065,7 +1065,7 @@ div.footer__container + p {
     text-align: center;
     font-size: 15px;
     font-style: italic;
-    display: grid;
+    display: inline-grid;
   }
 
   .nav__menu {
@@ -1082,11 +1082,6 @@ div.footer__container + p {
 
   .home__content {
     grid-template-columns: 0.35fr 3fr;
-  }
-
-  .home__data {
-    grid-column: initial;
-    text-align: center;
   }
 
   .home__social-icon {
