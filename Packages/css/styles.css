@@ -1084,6 +1084,11 @@ div.footer__container + p {
     grid-template-columns: 0.35fr 3fr;
   }
 
+  .home__data {
+    grid-column: initial;
+    text-align: center;
+  }
+
   .home__social-icon {
     width: 24px;
   }
@@ -1146,6 +1151,7 @@ div.footer__container + p {
     text-align: center;
     font-size: 15px;
     font-style: italic;
+    display: inline-grid;
   }
 
   .vertical-text {
