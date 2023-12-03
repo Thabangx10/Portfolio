@@ -919,7 +919,7 @@ textarea::placeholder {
 }
 
 .footer__bg {
-  background-color: var(--first-color-alt);
+  background-image: linear-gradient( rgba(5, 71, 253, 0.705), rgba(130, 205, 248, 0.705) );
   padding: 2rem 0 3rem;
 }
 
@@ -927,7 +927,7 @@ textarea::placeholder {
 .footer__title {
   font-size: var(--h1-font-size);
   margin-bottom: 4px;
-  animation: shine 2s forwards infinite;
+  /* animation: shine 2s forwards infinite; */
 }
 
 @keyframes shine {
@@ -998,7 +998,7 @@ h1.footer__title ~ span.footer__subtitle {
 
 /* Negation Pseudo Class */
 li :not(a.nav__link) {
-  color: rgba(238, 255, 0, 0.74);
+  color: rgba(255, 255, 255, 0.74);
 }
 
 /* structural selector 03 */
