@@ -5,6 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Custom Data Layer Script for collecting user information -->
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    'event': 'contactUs',
+    "enhanced_conversion_data": {
+      "email": "userEmailVariable", // Make sure to dynamically update this with actual user input
+      "name": "nameVariable" // Dynamically update with user input
+    }
+  });
+  </script>
   
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
