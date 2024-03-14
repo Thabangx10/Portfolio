@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Push to the dataLayer for Google Analytics
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-      'event': 'contactFormSubmission',
+      'event': 'contactUs',
       'contactDetails': {
         'email': email,
         'name': name
