@@ -65,6 +65,30 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
+document.addEventListener('DOMContentLoaded', function() {
+  var contactForm = document.querySelector('.contact__form');
+
+  contactForm.addEventListener('submit', function(event) {
+    // No event.preventDefault() here; we want the form to submit normally
+    var email = document.getElementById('email').value;
+    var name = document.getElementById('name').value;
+
+    // Push to the dataLayer for Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'contactFormSubmission',
+      'contactDetails': {
+        'email': email,
+        'name': name
+      }
+    });
+
+    // Log or alert for demonstration purposes (remove in production)
+    console.log('Data Layer push:', window.dataLayer[window.dataLayer.length - 1]);
+  });
+});
+
+
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
